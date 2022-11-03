@@ -1,3 +1,3 @@
 # html-css
 
-<a href="https://ricardobatistapina.github.io/projeto-android/index.html"> Executar o Desafio 10</a>
+<a href="https://ricardobatistapina.github.io/projeto-android/index.html" target="_blank"> Executar o Desafio 10</a>
