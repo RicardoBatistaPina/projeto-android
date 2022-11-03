@@ -1,0 +1,145 @@
+@charset "UTF-8";
+
+@font-face {
+  font-family: "idroid";
+  src: url(fontes/idroid.otf) format('opentype');
+  font-weight: normal;
+  font-style: normal;  
+}
+@font-face {
+  font-family: "bebas";
+  src: url(fontes/bebasneue.otf) format('opentype');
+  font-weight: normal;
+  font-style: normal;  
+}
+body {  
+  display: flexbox;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0px;
+  padding: 0px;
+  border: 0px;
+  background-color: #84e1ad;  
+  font-family: Arial, Helvetica, sans-serif;
+}
+  /* HEADER */
+header {
+  box-shadow: 0px 2px 4px black;
+  display: inline-block;
+  background-image: linear-gradient(to top, #1a5c38, #3cdb84);  
+  text-align: center;
+  width: 100%;
+  color: white;
+  text-shadow: 0px 2px 4px black;
+  
+}
+header h1 {
+  font-family: bebas;
+  text-transform: uppercase; 
+}
+header p {
+  margin: 30px auto;
+  width: 400px;
+}
+nav {
+  flex-wrap: wrap;
+  width: 1050px;
+  text-shadow: none;
+  margin: auto;
+  display: flex;
+  justify-content: flex-start;
+}
+nav a {
+  font-size: 0.9em;
+  text-decoration: none;
+  color: white;
+  padding-left: 16px;
+}
+/* MAIN */
+main {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: white;
+  max-width: 730px;
+  margin: 0px auto;
+}
+main p {
+  margin-top: 10px;
+  padding: 0 15px;
+  text-align: justify;
+  text-indent: 25px;
+}
+
+picture {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+picture img {
+  max-width: 100%;  
+  box-sizing: content-box;
+  padding: 0 15px; 
+}
+iframe {
+  max-width: 100%;
+  max-height: 100%;
+  width: 730px;
+  height: 394px;
+  box-sizing: border-box;
+  padding: 0 15px;
+}
+main > h1, h2 {
+  text-align: left;
+  margin: 15px;
+  color: #165a35;
+  font-family: idroid;
+}
+main > h1 {
+  font-size: 28px;
+}
+h2 {
+  width: 100%;
+  background-image: linear-gradient(to right,#84e1ad, #ffffff );
+  padding: 0px 10px;
+  font-size: 23px;
+}
+div {
+  background-color: #84e1ac76;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 15px;
+  border-radius: 15px;
+}
+h3 {
+  font-size: 16px;
+  background-color: #5dae81;
+  color: white;
+  padding: 10px 15px;
+  margin: 0;
+  border-radius: 15px 15px 0 0;
+  width: 100%;
+}
+div ul, div p {
+  margin: 10px;
+  padding: none ;
+}
+div ul {  
+  width: 100%;
+  list-style: none;
+  column-count: 2;
+  justify-content: space-evenly;
+}
+div ul li::before {
+  content: url(imagens/marca-de-verificacao.png)" ";
+}
+/* FOOTER */
+footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-color:  #195b38;
+}
+footer > p {
+  color: white;
+  font-size: 0.6em;
+}
